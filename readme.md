@@ -23,8 +23,8 @@ Main
 ```
 
 ### Train a model
-To train a model, the script ```main.py``` should be used. In those scripts, there is a dictionary of parameters that could be changed including architecture to use, number of epochs, batch size and folder list.
-During training, all the metrics are saved to the tensorboard and also to a log file iin the defined folder for the run. The final models is also saved in this folder.
+To train a model, the script ```main.py``` should be used. The script has a dictionary of parameters that could be modified, this includes architecture to use, selected plane (frontal, sagittal, coronal), number of epochs, batch size and folder list.
+During training, all the metrics are saved to the tensorboard and also to a log file iin the defined folder for the run. The final models is also saved in the folder.
 
 ### Inference with new data
 After training a model, the script ```inference.py``` can be used to test new data. Different parameters can be set for inference: path to the model, type of output to save (raw output, probabilities, segmentation), volumes to segment and respective groundtruth if available.
